@@ -9,6 +9,11 @@ func TestLookupIdent_Function(t *testing.T) {
 	}{
 		{"def", FUNCTION},
 		{"let", LET},
+		{"return", RETURN},
+		{"if", IF},
+		{"else", ELSE},
+		{"true", TRUE},
+		{"false", FALSE},
 		{"x", IDENT},
 	}
 
