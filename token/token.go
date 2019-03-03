@@ -18,7 +18,7 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
-	FUNCTION = "FUNCTION"
+	FUNCTION = "DEF"
 	LET      = "LET"
 )
 
@@ -27,4 +27,16 @@ type Type string
 type Token struct {
 	Type    Type
 	Literal string
+}
+
+var keywords = map[string]Type{
+	"def": FUNCTION,
+	"let": LET,
+}
+
+func LookupIdent(ident string) Type {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
 }
