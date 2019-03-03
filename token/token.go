@@ -26,6 +26,12 @@ const (
 
 	FUNCTION = "DEF"
 	LET      = "LET"
+
+	IF     = "IF"
+	ELSE   = "ELSE"
+	TRUE   = "TRUE"
+	FALSE  = "FALSE"
+	RETURN = "RETURN"
 )
 
 type Type string
@@ -36,8 +42,13 @@ type Token struct {
 }
 
 var keywords = map[string]Type{
-	"def": FUNCTION,
-	"let": LET,
+	"def":    FUNCTION,
+	"let":    LET,
+	"if":     IF,
+	"else":   ELSE,
+	"true":   TRUE,
+	"false":  FALSE,
+	"return": RETURN,
 }
 
 func LookupIdent(ident string) Type {
