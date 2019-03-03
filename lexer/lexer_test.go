@@ -37,7 +37,7 @@ func TestLexer_NextToken(t *testing.T) {
 	}
 }
 
-func TestLexer_NextToken2(t *testing.T) {
+func TestLexer_NextToken_Function(t *testing.T) {
 	input := `let five = 5; 
               let ten = 10; 
               let add = def(x, y) {x + y;};
@@ -102,7 +102,7 @@ func TestLexer_NextToken2(t *testing.T) {
 	}
 }
 
-func TestLexer_NextToken3(t *testing.T) {
+func TestLexer_NextToken_AsteriskBangSlashGtLt(t *testing.T) {
 	input := `let five = 5;
               let ten = 10;
               let add = def(x, y) {
