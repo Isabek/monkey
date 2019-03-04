@@ -6,4 +6,4 @@ Javascript like language/interpreter
 
 ### Motivation
 
-Currently, I am reading Ball Thorsten's book `Writing an Interpreter in Go` and want to write JavaScript like language with interpretator.
+Currently, I am reading Ball Thorsten's book `Writing an Interpreter in Go` and want to write JavaScript like language with interpreter.
